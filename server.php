@@ -12,7 +12,7 @@
    
  
 // connect to the database
-  $db = mysqli_connect('localhost','root','','project');
+  $db = mysqli_connect('localhost','root','akbatra567','blog');
 
   
 
@@ -31,8 +31,7 @@
         {
          
           $_SESSION['val'] = "artist";
-          $sql = "INSERT INTO artist (firstname,lastname,email,password)
-          VALUES ('$fname','$lname','$email','$password')";
+          $sql = "INSERT INTO artist (firstname,lastname,email,password) VALUES ('$fname','$lname','$email','$password')";
           
           $result=mysqli_query($db,$sql);
            if($result == FALSE )
