@@ -17,13 +17,13 @@
             <a href="index.php">Home</a>
             </li>
             <li>
-            <a href="art_page1.html">Artwork</a>
+            <a href="/artwork">Artwork</a>
             </li>
             <li>
             <a href="artist_1.html">Artist</a>
             </li>
             <li>
-            <a href="sell_art.html">Sell Art</a>
+            <a href="/sell_art">Sell Art</a>
             </li>
         </ul>
         
@@ -40,12 +40,18 @@
                     </div>
                 
             </li>
+            @guest
             <li>
                 <a href="/login">LogIn</a>
             </li>
             <li>
                 <a href="/register">SignUp</a>
             </li>
+            @else
+            <li>
+                <a href="/profile">User Name</a>
+            </li>
+            @endguest
         </ul>
         </div>
     </div>

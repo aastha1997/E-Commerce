@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-
+Route::get('/sell_art', 'PagesController@sellArt')->name('sell.art');
+Route::get('/artwork', 'PagesController@artwork')->name('artwork');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
